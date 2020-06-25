@@ -1,10 +1,15 @@
 package com.example.study.model.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class User {
 
@@ -18,9 +23,9 @@ public class User {
 
     private String phoneNumber;
 
-    private LocalDateTime createAt;
+    private LocalDateTime createdAt;
 
-    private String createBy;
+    private String createdBy;
 
     private LocalDateTime updatedAt;
 
